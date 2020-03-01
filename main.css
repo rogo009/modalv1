@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .button {
+      background-color: blue;
+      padding: 1em 2em;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+  }
+
+  .button:hover {
+      background: pink;
+  }
+
+  .modal {
+      /* display: none; */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,.2);
+      border: 5px solid orange;
+  }
