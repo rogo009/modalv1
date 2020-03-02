@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <button class="button" id="modalBtn">Open Modal</button>
+    <h1>Welcome...</h1>
+    <p>Check out this simple modal project by clicking on the button below.</p>
+    <button class="button" id="modalBtn">Open</button>
     <div class="modal" id="modal">
       <div class="modal-content">
         <div class="modal-header">
           <h2>Modal Header</h2>
-          <span class="closeBtn">&times;</span>
-        </div> <!-- .modal-content -->
+          <span class="closeBtn" id="closeBtn">&times;</span>
+        </div> <!-- .modal-header -->
         <div class="modal-body">
           <p>Did you know...</p>
           <p>
-            This is a simple modal. It's also known as a popup window. This is very commonly used window display when browsing different sites on the internet. The user can either select the popup window manually or the popup window can display on a set time out function.
+            This is a simple modal. It's also known as a popup window. This is very commonly used window display when browsing sites on the internet. They are also known as a nuissance. The user can click the popup window manually or the popup can display on a set time out function. 
+            <p>Building small javascript projects is fun and satisfying to see styling and functionality come together in a final project.
           </p>
-        </div>
+        </div> <!-- .modal-body -->
         <div class="modal-footer">
             <h3>Modal Footer</h3>
-        </div>
-      </div>
-    </div>
+        </div> <!-- .modal-footer -->
+      </div> <!-- .modal-content -->
+    </div> <!-- .modal -->
     <script src="script.js"></script>
   </body>
 </html>

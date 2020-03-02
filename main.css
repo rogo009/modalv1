@@ -1,28 +1,28 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
-  position: fixed;
   z-index: 1;
   background-color: blue;
-  padding: 1em 2em;
+  padding: 1em;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  margin: 40%;
-  font-size: 0.9em;
-  width: 150px;
+  font-size: 1em;
+  width: 125px;
 }
 
 .button:hover {
   background: pink;
 }
 
-/* make height and width 100% so the modal window takes up the entire browser window, so most likely will usually keep these dimensions 100%. fixed position means the modal will follow the user through out the page*/
+/* make height and width 100% so the modal window takes up the entire browser window, most likely will usually keep these dimensions 100%. 
+fixed position means the modal will follow the user through out the page*/
 .modal {
   display: none;
   position: fixed;
@@ -39,31 +39,35 @@ body {
   border: 5px solid pink;
 }
 
-/* margin auto on left/right auto centers it on the browser */
-.modal-content {
-  border-radius: 10px;
-  width: 80%;
-  margin: 15% auto;
-  padding: 10px;
-  background-color: #fff;
-  margin: 15% auto;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
-    0 7px 20px 0 rgba(61, 125, 245, 0.46);
-  animation-name: modalopen;
-  animation-duration: 1s;
-}
-
 .modal-header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
 }
 
+/* modal content contains: header, body, footer. margin auto on left/right auto centers it on the browser */
+.modal-content {
+  border-radius: 10px;
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  background-color: #fff;
+  margin: 25% auto;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+    0 7px 20px 0 rgba(61, 125, 245, 0.46);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
 .closeBtn {
   color: pink;
-  margin: 0 20px;
+  margin: 10 15px;
   font-size: 2em;
   cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: bold;
 }
 
 .closeBtn:hover,
@@ -71,9 +75,17 @@ body {
   color: #000;
 }
 
+.modal-content {
+    text-align: left;
+}
 .modal-content p {
   margin: 10px 0px 0px 0px;
-  line-height: 30px;
+ line-height: 30px;
+}
+
+.modal-content h3 {
+    padding: 20px 0 0 0 ;
+    border-top: 1px solid black;
 }
 
 @keyframes modalopen {
